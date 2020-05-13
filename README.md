@@ -24,3 +24,12 @@ The circuit has 8 modules:
 ![block](https://github.com/LKMDang/door_lock/blob/master/graphs/block_dia.png?raw=true)
 ### State machine flow graph
 ![FSM](https://github.com/LKMDang/door_lock/blob/master/graphs/FSM_da.png?raw=true)
+## Simulation & testing
+The simulator used for testing is *ModelSim*. The latter 7 modules are tested using the following inputs:
+- `led7_decoder()`: first, *enable = 0*, then *enable = 1*, after that, all the digits from 0 to F are tested.
+- `pass_decoder()`: first, *enable = 0*, then *enable = 1*, after that, 16 random values for password are tested.
+- `LED_blinker()`: with 5Hz frequency, first *enable = 0*, then *enable = 1* for a period of time.
+- `state_decoder()`: all the states of the circuit are tested.
+- `password_getter_sync()`: first, the module is reset, then 5 random digits will be inputted.
+- `door_lock_FSM()`: the FSM is tested in these states sequentially: *reset* -> `INITIAL` -> `VERIFY` with correct password -> `VERIFY` with wrong password for 3 times -> `FREEZE` -> *reset* -> `SET` -> `VERIFY` with new password.
+- `door_lock_top()`: the same as the FSM, but with inputs passed through other modules instead of directly into the FSM.
