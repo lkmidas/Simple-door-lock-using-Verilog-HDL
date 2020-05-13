@@ -1,2 +1,2 @@
 # door_lock
-Logic Design with Verilog HDL mini-project: Simple door lock with Verilog HDL on DE2I-150 board. 
+This is the repository for my mini-project in HCMUT's CO2033 - *Logic Design with Verilog*: **Simple 3-digit password door lock using Verilog HDL on DE2I-150 board**. 
