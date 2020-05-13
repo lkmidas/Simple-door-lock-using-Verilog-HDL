@@ -1,4 +1,4 @@
-# door_lock
+# Simple door lock using Verilog HDL
 This is the repository for my mini-project in HCMUT Computer Engineering course CO2033 - *Logic Design with Verilog*: **Simple 3-digit password door lock using Verilog HDL on DE2I-150 board**. 
 ## Description
 This mini-project is to implement a door lock logic with the following functionalities:
@@ -21,9 +21,9 @@ The circuit has 8 modules:
 - `door_lock_FSM()` is a synchronous Mealy finite state machine, this is where all the logic of the design is processed.
 - `door_lock_top()` is the top module to connect smaller ones.
 ### Block diagram of the top modules and I/O of the DE2i-150 board
-![block](https://github.com/LKMDang/door_lock/blob/master/graphs/block_dia.png?raw=true)
+![block](https://github.com/LKMDang/Simple-door-lock-using-Verilog-HD/blob/master/graphs/block_dia.png?raw=true)
 ### State machine flow graph
-![FSM](https://github.com/LKMDang/door_lock/blob/master/graphs/FSM_da.png?raw=true)
+![FSM](https://github.com/LKMDang/Simple-door-lock-using-Verilog-HD/blob/master/graphs/FSM_da.png?raw=true)
 ## Simulation & testing
 The simulator used for testing is *ModelSim*. The latter 7 modules are tested using the following inputs:
 - `led7_decoder()`: first, *enable = 0*, then *enable = 1*, after that, all the digits from 0 to F are tested.
