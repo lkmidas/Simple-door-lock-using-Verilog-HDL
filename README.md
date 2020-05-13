@@ -21,5 +21,6 @@ The circuit has 8 modules:
 - `door_lock_FSM()` is a synchronous Mealy finite state machine, this is where all the logic of the design is processed.
 - `door_lock_top()` is the top module to connect smaller ones.
 ### Block diagram of the top modules and I/O of the DE2i-150 board
-
+![block](https://github.com/LKMDang/door_lock/blob/master/graphs/block_dia.png?raw=true)
 ### State machine flow graph
+![FSM](https://github.com/LKMDang/door_lock/blob/master/graphs/FSM_da.png?raw=true)
