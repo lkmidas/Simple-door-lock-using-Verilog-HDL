@@ -33,3 +33,5 @@ The simulator used for testing is *ModelSim*. The latter 7 modules are tested us
 - `password_getter_sync()`: first, the module is reset, then 5 random digits will be inputted.
 - `door_lock_FSM()`: the FSM is tested in these states sequentially: *reset* -> `INITIAL` -> `VERIFY` with correct password -> `VERIFY` with wrong password for 3 times -> `FREEZE` -> *reset* -> `SET` -> `VERIFY` with new password.
 - `door_lock_top()`: the same as the FSM, but with inputs passed through other modules instead of directly into the FSM.
+## On-board result
+The result of the implementation on DE2i-150 board can be found [here](https://youtu.be/6LMBHBavZH4).
