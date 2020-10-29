@@ -1,5 +1,5 @@
 # Simple door lock using Verilog HDL
-This is the repository for my mini-project in HCMUT Computer Engineering course CO2033 - *Logic Design with Verilog HDL*: **Simple 3-digit password door lock using Verilog HDL on DE2I-150 board**. 
+This is the repository for my mini-project in HCMUT Computer Engineering course CO2033 - *Logic Design with Verilog HDL*: **Simple 3-digit password door lock using Verilog HDL on DE2I-150 board**. More details are in the report file (written in Vietnamese).
 ## Description
 This mini-project is to implement a door lock logic with the following functionalities:
 - The password is a 3-digit hexadecimal number whose each digit is in a range from 0 to F.
